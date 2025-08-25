@@ -1,0 +1,35 @@
+Day 1 — Functional Components & JSX (2–3 hrs)
+What you’ll do today:
+Set up a fresh React project (Vite).
+Create reusable components with props.
+Render lists with keys (prep for Day 3).
+Style with plain CSS.
+Why this matters for Next.js
+Next.js uses the same React component model and JSX. You’ll later drop these components into file-based routes. 
+The difference is mostly routing + data fetching, not the component fundamentals.
+
+Step 0 — Project setup
+1. Node & Vite
+# Node: v18+ recommended
+node -v
+
+# Create project
+npm create vite@latest react-next-bootcamp -- --template react
+cd react-next-bootcamp
+npm install
+npm run dev
+
+2. Directory layout (we’ll add Day 1 files next)
+react-next-bootcamp/
+  src/
+    day1/
+      Title.jsx
+      ProfileCard.jsx
+      CardList.jsx
+      day1.css
+    App.jsx
+    main.jsx
+    index.css
+
+Step 1 — Base files (5 min)
+src/App.jsx
