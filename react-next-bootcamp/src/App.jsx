@@ -10,21 +10,21 @@ const people = [
   {
     id: 1,
     name: "Alex Rivera",
-    age: 20,
+    age: 18,
     bio: "BSIT student, loves React.",
     favoriteColor: "Black",
   },
   {
     id: 2,
     name: "Jamie Cruz",
-    age: 21,
+    age: 30,
     bio: "Front-end curious, gym 4x/wk.",
     favoriteColor: "Pink",
   },
   {
     id: 3,
     name: "Kai Santos",
-    age: 20,
+    age: 19,
     bio: "Enjoys biking and CSS art.",
     favoriteColor: "Purple",
   },
@@ -98,7 +98,8 @@ export default function App() {
       <section>
         <Title text={"Challenge 2: CardList (map + keys)"}></Title>
         {/* Renders the Cardlist for each items in the PEOPLE object and people props */}
-        <CardList people={people}></CardList>
+        <CardList people={people.filter((p) => p.age > 20)}></CardList>
+        {/* shows people older than 20 */}
         {/* people = people object */}
       </section>
       <section>

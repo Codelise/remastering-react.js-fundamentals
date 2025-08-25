@@ -13,6 +13,7 @@ const CardList = ({ people }) => {
   return (
     <div className="grid">
       {/* // creates a .map (new array) of people inside the PEOPLE object from App.jsx */}
+      {/* ProfileCard fetches the data from people object in App.jsx from id, name, age, bio and favoriteColor */}
       {people.map((p) => (
         <ProfileCard
           key={p.id}
@@ -20,19 +21,7 @@ const CardList = ({ people }) => {
           age={p.age}
           bio={p.bio}
           favoriteColor={p.favoriteColor}
-        >
-          {/* ProfileCard fetches the data from PEOPLE object in App.jsx from id, name, age, bio and favoriteColor */}
-        </ProfileCard>
-      ))}
-
-      {people.map((q) => (
-        <ProfileCard
-          key={q.id}
-          name={q.name}
-          age={q.age}
-          bio={q.bio}
-          favoriteColor={q.favoriteColor}
-        ></ProfileCard>
+        />
       ))}
     </div>
   );
